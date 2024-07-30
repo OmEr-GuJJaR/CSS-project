@@ -166,7 +166,7 @@ div.cont-images{
 }
 
 div.video{
-    width: 99vw;
+    width: 98vw;
     height: 40vh;
     align-content: center;
     justify-content: center;
@@ -206,7 +206,7 @@ table .t-r{
 
 .item-3{
     grid-area: aside;
-    width: 10vw;
+    width: 8vw;
     height: 100vh;
     text-decoration: none;
     text-transform: capitalize;
