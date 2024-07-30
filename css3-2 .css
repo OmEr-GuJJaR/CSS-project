@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    border: 4px solid grey;
+    display: grid;
+    grid-template-columns: repeat(5 ,5fr);
+    row-gap: 50px;
+    position: relative;
+    height: 100vh;
+}
+.item{
+    width: 200px;
+    height: 200px;
+    border: 4px solid rgb(0, 0, 0);
+    position: relative;
+    left: 70px;
+    top: 100px;
+    text-align: center;
+    text-transform: capitalize;
+    text-shadow: 4px 4px 4px rgb(113, 125, 133);
+    justify-content: center;
+    align-content: center;
+    font-size: larger;
+}
+.box-1{
+    box-shadow: -10px -10px 8px grey;
+    background-color: black;
+    color: white;
+    
+}
+.box-2{
+    transform: translate(-30px, -40px);
+    background-color: bisque;
+}
+.box-3{
+    transform: rotate(60deg);
+}
+.box-4{
+    transform: scale(2, 0.8);
+}
+.box-5{
+    transform: skew(10deg, 10deg);
+}
+.box-6{
+    transition-property: width, height;
+    transition-duration: 4s;
+    transition-timing-function: linear;
+    transition-delay: 0.3ms;
+}
+.box-6:hover{
+    width: 200px;
+    height: 400px;
+    background-color: antiquewhite;
+}
+
+
+@keyframes animation-box {
+
+    0%{background-color: rgb(84, 255, 84);}
+    25%{background-color: rgb(0, 255, 255);}
+    50%{background-color: rgb(255, 231, 11);}
+    75%{background-color:rgb(243, 241, 240);}
+    100%{background-color: rgb(255, 0, 0);}
+    
+}
+.box-7{
+    background-color: gray;
+    animation-name: animation-box;
+    animation-duration: 5s;
+    animation-delay: 0.1ms;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+.box-8{
+    
+    transition-duration: 4s;
+    transition-timing-function: ease;
+    transition-delay: 0.3ms;
+    
+}
+.box-8:hover{
+    background-color: rgb(24, 228, 228);
+    transform: rotate3d(360, 360, 360, 360deg);
+}
+.box-9 .border p{
+    font-size: xx-large;
+    color: yellow;
+    cursor: pointer;
+    
+} 
+.border:hover{
+    padding: 10px;
+    background-color: black;
+    border: 2px solid rgb(253, 219, 26);
+    border-radius: 22px;
+    transition-duration: 8s;
+    transition-timing-function: linear;
+    transition-delay: 0.1ms;
+    transform: rotateZ(360deg)
+    
+   
+}
+.box-10{
+    image-orientation: flip;
+}
+.box-10 img{
+    width: 200px;
+    height: 295px;
+    object-fit: cover;
+    opacity: 0.1;
+}
+img:hover{
+    opacity: 1;
+    width: 300px;
+    height: 400px;
+    float: right;
+    
+}
+
+
+

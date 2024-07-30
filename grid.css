@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.containers{
+    width: 99vw;
+    background-color: black;
+    display: grid;
+    position: static;
+    grid-template-areas: "nav nav nav nav"
+                         "article article article aside"
+                         "footer footer footer footer";
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+.item{
+    margin-top: 0px;
+}
+
+.logo{
+    gap: 8px;
+    
+}
+
+.logo img{
+    width: 400px;
+    height: 100px;
+}
+
+.header{
+    display: flex;
+    grid-area: nav;
+    background-color: rgb(0, 0, 0);
+    height: 15vh;
+    width: 100%;
+    top: 0;
+    position: sticky;
+    justify-content: center;
+    align-items: center;
+    gap: 400px;
+    z-index: 1;
+}
+
+.li-item{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 10px;
+    list-style-type: none;
+}
+
+li{
+    text-transform: capitalize;
+    font-size: x-large;
+    font-weight: bolder;
+    padding: 22px;
+    color: rgb(137, 161, 161);
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+}
+
+li a:hover{
+    color: gold;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+    border-radius: 10px solid black;
+}
+
+.dropdown-btn{
+    background-color:  rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: x-large;
+    font-weight: bolder;
+    padding: 6px;
+    color: rgb(12, 141, 253);
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    color: rgb(15, 10, 10);
+    box-shadow: 13px 20px 15px rgba(39, 52, 58, 0.8);
+    z-index: 1;
+    background-color: rgb(0, 0, 0);
+}
+
+.dropdown-content a{
+    display: block;
+    color: rgb(255, 230, 4);
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: larger;
+    text-align: center;
+    width: 88px;
+}
+
+.dropdown-content a:hover{
+    background-color: #f8f8f5;
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.item-2{
+    display: grid;
+    grid-area: article;
+    width: 90vw;
+    height: 203vh;
+    align-content: center;
+    align-items: center;
+    margin-top: 0;
+    margin-left: 0px;
+    gap: 20px;
+}
+
+div.banner{
+    width: 98vw;
+    height: 20vh;
+    align-content: center;
+    text-align: center;
+    padding: 4px;
+    margin-bottom: 18px;
+    box-shadow: 8px 10px 6px rgb(226, 216, 216);
+    
+}
+
+div.cont-images{
+    width: 88vw;
+    height: 100vh;
+    justify-content: center;
+    align-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(50px, 1fr));
+    gap: 20px;
+}
+
+.photos img{
+    width: 100%;
+    height: auto;
+}
+
+.photo-btn button{
+    position: relative;
+    left: 142px;
+    width: 30%;
+    height: 30px;
+    background-color: rgb(160, 29, 68);
+    color: whitesmoke;
+    font-size: larger;
+    font-weight: bolder;
+    text-transform: capitalize;
+    border-radius: 12px;
+    border: solid white;
+    gap: 10px;
+}
+
+div.video{
+    width: 99vw;
+    height: 40vh;
+    align-content: center;
+    justify-content: center;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    gap: 20px;
+}
+.video-item{
+    display: flex;
+    gap: 20px;
+}
+.video-item video{
+    width: 100%;
+    height: auto;
+}
+
+
+div.content{
+    color: #f8f8f5;
+    display: grid;
+    grid-template-rows: repeat(5, 5fr);
+    width: 98vw;
+    height: 30vh;
+    text-transform: capitalize;
+}
+table .t-h{
+    font-weight: bolder;
+    font-size: xx-large;
+}
+table .t-r{
+    text-align: center;
+    font-size: x-large;
+    
+}
+
+
+.item-3{
+    grid-area: aside;
+    width: 10vw;
+    height: 100vh;
+    text-decoration: none;
+    text-transform: capitalize;
+    overflow-y: scroll;
+    margin-top: 270px;
+}
+div.aside-bar{
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(136, 92, 92);
+}
+.item-4{
+    grid-area: footer;
+    width: 100vw;
+    height: 24vh;
+    position: relative;
+    bottom: 0;
+    background-image: url(images/footer.png);
+    background-size: cover;
+}
+.footer-content{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    text-align: center;
+}
