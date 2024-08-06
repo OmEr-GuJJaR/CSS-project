@@ -9,7 +9,6 @@
     row-gap: 50px;
     position: relative;
     height: 100vh;
-    background-image: linear-gradient(rgb(171, 255, 251) 40%,rgb(77, 234, 255),rgb(2, 78, 83));
 }
 .item{
     width: 200px;
@@ -101,21 +100,24 @@
     transition-timing-function: linear;
     transition-delay: 0.1ms;
     transform: rotateZ(360deg)
+    
+   
 }
 .box-10{
     image-orientation: flip;
 }
 .box-10 img{
     width: 200px;
-    height: 200px;
-    object-fit: center/cover;
-    opacity: 0.3;
-    box-sizing: border-box;
+    height: 295px;
+    object-fit: cover;
+    opacity: 0.1;
 }
 img:hover{
     opacity: 1;
     width: 300px;
-    height: 300px;
+    height: 400px;
+    float: right;
+    
 }
 
 

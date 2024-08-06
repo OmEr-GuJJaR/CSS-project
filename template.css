@@ -1,0 +1,120 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.header{
+    display: flex;
+    position: sticky;
+    column-gap: 25rem;
+    word-spacing: 20px;
+    text-transform: capitalize;
+    box-shadow: 4px 0px 13px rgba(81, 141, 141, 0.8);
+}
+.logo{
+    text-shadow: -3px -3px 6px rgba(19, 20, 20, 0.8);
+    position: relative;
+    top: 0px;
+    left: 300px;
+}
+h1{
+    color: rgb(11, 255, 255);
+    font-size: 4em;
+}
+.navbar{
+    position: absolute;
+    top: 50px;
+    right: 250px;
+
+}
+.ul{
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+.li{
+    font-size: 2rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: bolder;
+    word-spacing: 2px;
+}
+.template{
+    height: 700px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    top: 0px;
+    gap: 40px;
+    border: 2px solid rgb(255, 255, 255);
+    
+}
+.columns{
+    position: relative;
+    text-transform: capitalize;
+    top: 10px;
+    font-family: "Roboto", sans-serif;
+    font-size: bolder;
+    width: 344px;
+    height: auto;
+    border: 2px solid rgb(218, 218, 218);
+    border-radius: 10px;
+    box-shadow: 4px 4px 6px rgba(19, 20, 20, 0.8), -4px -4px 6px rgba(19, 20, 20, 0.8);
+}
+img{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.price{
+    color: rgb(0, 0, 0);
+    background-color: none;
+    font-size: ;
+    position: absolute;
+    top: 280px;
+    left: 10px;
+}
+.columns i{
+    position: absolute;
+    right: 10px;
+    top: 290px;
+    font-size: 24px;
+}
+.columns button{
+    position: relative;
+    text-transform: capitalize;
+    left: 65px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 2em;
+    top: 2px;
+    width: auto;
+    padding: 6px;
+    background-color: rgb(175, 159, 159);
+    border: 2px solid rgb(172, 144, 144);
+    border-radius: 10px;
+}
+.columns p{
+    text-align: center;
+    background-color: rgb(5, 5, 5);
+    color: azure;
+    text-wrap: justify;
+}
+.icons{
+    font-size: 20px;
+}
+.icons i{
+    position: static;
+}
+.footer{
+    height: auto;
+    position: relative;
+    bottom: 0px;
+    left: 0;
+    background-color: black;
+}
+.footer h3{
+    color: yellow;
+    text-align: center;
+    font-size: x-large;
+}

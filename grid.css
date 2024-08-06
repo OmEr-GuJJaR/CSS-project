@@ -5,18 +5,13 @@
 
 .containers{
     width: 99vw;
-    background-color: black;
+    background-image: linear-gradient(rgb(0, 0, 0),rgb(252, 66, 66),rgb(255, 212, 71));
     display: grid;
     position: static;
     grid-template-areas: "nav nav nav nav"
                          "article article article aside"
                          "footer footer footer footer";
 }
-
-body{
-    background-color: rgb(0, 0, 0);
-}
-
 .item{
     margin-top: 0px;
 }
@@ -34,7 +29,7 @@ body{
 .header{
     display: flex;
     grid-area: nav;
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.3);
     height: 15vh;
     width: 100%;
     top: 0;
